@@ -23,4 +23,6 @@
 
         $job->tag('Frontend');
 
+        expect($job->tags)->toHaveCount(1);
+
     });
