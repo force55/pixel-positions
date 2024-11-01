@@ -7,11 +7,12 @@
     use App\Http\Controllers\TagController;
     use Illuminate\Support\Facades\Route;
 
-    Route::get('/', [JobController::class, 'index']);
+    Route::get('/', [JobController::class, 'index'])->name('home');
 
     Route::get('/jobs/create', [JobController::class, 'create'])->middleware('auth');
     Route::post('/jobs', [JobController::class, 'store']);
     Route::get('/jobs/{job}', [JobController::class, 'show']);
+
 
     Route::get('/search', SearchController::class);
     Route::get('/tags/{tag:name}', TagController::class);
