@@ -1,7 +1,7 @@
 <x-layout>
     <x-page-heading>Log In</x-page-heading>
 
-    <x-forms.form method="POST" action="/register" enctype="multipart/form-data">
+    <x-forms.form method="POST" action="/login" enctype="multipart/form-data">
         <x-forms.input name="email" label="Email" type="email" />
         <x-forms.input name="password" label="Password" type="password" />
 
